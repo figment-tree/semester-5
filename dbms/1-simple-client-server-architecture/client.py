@@ -9,7 +9,7 @@ Client = s.socket(s.AF_INET, s.SOCK_STREAM)
 Client.connect(('localhost', REQUEST_PORT))
 
 msgToServer = "Hello server!"
-# Message is encoded in utf-8, since the send() function 
+# Message is encoded in utf-8, since the send() function
 # expects data in bytes and not as a string
 Client.sendall(msgToServer.encode('utf-8'))
 
